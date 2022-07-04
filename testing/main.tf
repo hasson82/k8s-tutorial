@@ -12,7 +12,7 @@ resource "google_container_node_pool" "primary_preemptible_nodes" {
   node_count = var.node_count
 
   node_config {
-    preemptible  = true
+    preemptible  = var.is_preemptible
     machine_type = var.machine_type
   }
 }

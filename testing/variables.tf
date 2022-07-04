@@ -38,6 +38,11 @@ variable "node_count" {
   default = 2
 }
 
+variable "is_preemptible" {
+  type    = bool
+  default = false
+}
+
 variable "machine_type" {
   type    = string
   default = "f1-micro"
