@@ -1,0 +1,7 @@
+- name: This is a basic example that creates a file with its content
+  hosts: localhost
+  tasks:
+    - name: Create the file '/tmp/test.txt' containing "success".
+      copy:
+        content: "success"
+        dest: /tmp/test.txt
