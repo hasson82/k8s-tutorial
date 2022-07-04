@@ -6,12 +6,12 @@ resource "google_container_cluster" "primary" {
 }
 
 resource "google_container_node_pool" "primary_preemptible_nodes" {
-  name = "my-node-pool"
+  name     = "my-node-pool"
   location = "europe-central2"
-  cluster = google_container_cluster.primary.name
+  cluster  = google_container_cluster.primary.name
 
   node_config {
-    preemptible = false
+    preemptible  = false
     machine_type = "n1-standard-1"
   }
 }
