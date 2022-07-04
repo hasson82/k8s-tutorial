@@ -1,5 +1,5 @@
 provider "google" {
-  credentials = file("./auth/serviceaccount.json")
-  project     = "omerkubernetesproject"
-  region      = "europe-central2"
+  credentials = file(var.credentials)
+  project     = var.project
+  region      = var.region
 }
