@@ -1,10 +1,10 @@
 credentials        = "auth/serviceaccount.json"
 project            = "omerkubernetesproject"
 region             = "europe-central2"
-cluster_name       = "my-testing-cluster"
+cluster_name       = "my-production-cluster"
 network            = "default"
 initial_node_count = 1
 node_name          = "my-node-pool"
-node_count         = 2
-is_preemptible     = true
-machine_type       = "f1-micro"
+node_count         = 3
+is_preemptible     = false
+machine_type       = "n1-standard-1"
